@@ -52,7 +52,9 @@ const linesConfig = [
   'broke',
   'Player Interactions',
   'clicked',
-  '§f-----'
+  '§f-----',
+  '[Земли]',
+  'placed'
 ]
 
 function checkLineExists(line) {
