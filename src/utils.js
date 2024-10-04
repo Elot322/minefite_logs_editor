@@ -41,7 +41,15 @@ const linesConfig = [
   'reward(s)',
   '[Сообщение администрации]',
   'Рестарт Сервера',
-  'Другие:'
+  'Другие:',
+  'Page',
+  'Container Transactions',
+  'added',
+  'removed',
+  'added',
+  'removed',
+  'CoreProtect',
+  'broke'
 ]
 
 function checkLineExists(line) {
