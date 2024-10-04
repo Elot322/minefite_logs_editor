@@ -46,7 +46,7 @@ const downloadFile = () => {
       <label for="file-upload" class="custom-file-upload">
         Загрузить файл .log
       </label>
-      <input @change="handleFileUpload" id="file-upload" type="file" />
+      <input v-if="!modifiedContent" @change="handleFileUpload" id="file-upload" type="file" />
     </div>
     <button  v-if="modifiedContent" @click="downloadFile">Скачать модифицированный файл</button>
     <p>СОЗДАНО ПРИ ПОДДЕРЖКЕ ФРАКЦИИ КУЛ-ТИРАС</p>
