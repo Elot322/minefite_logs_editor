@@ -49,7 +49,10 @@ const linesConfig = [
   'added',
   'removed',
   'CoreProtect',
-  'broke'
+  'broke',
+  'Player Interactions',
+  'clicked',
+  '§f-----'
 ]
 
 function checkLineExists(line) {
