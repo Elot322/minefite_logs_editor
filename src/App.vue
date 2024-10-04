@@ -42,11 +42,11 @@ const downloadFile = () => {
       <img src="/Kul_Tiran_crest.webp" class="logo" alt="Kul_Tiran_crest logo" />
     </a>
     <h2>ФОРМАТИРОВАНИЕ ЛОГОВ</h2>
-    <div>
+    <div v-if="!modifiedContent">
       <label for="file-upload" class="custom-file-upload">
         Загрузить файл .log
       </label>
-      <input v-if="!modifiedContent" @change="handleFileUpload" id="file-upload" type="file" />
+      <input @change="handleFileUpload" id="file-upload" type="file" />
     </div>
     <button  v-if="modifiedContent" @click="downloadFile">Скачать модифицированный файл</button>
     <p>СОЗДАНО ПРИ ПОДДЕРЖКЕ ФРАКЦИИ КУЛ-ТИРАС</p>
