@@ -82,13 +82,9 @@ function isChat(line) {
   return line.includes('[Render thread/INFO]: [CHAT]') && line.split('[Render thread/INFO]: [CHAT]').pop().trim().length > 0
 }
 
-// Чтение файла
 export function editLogs(data) {
-
-  // Разделение текста на строки
   const lines = data.split('\n');
 
-  // Фильтрация строк, оставляя только те, которые содержат ник
   const filteredLines = lines.filter((line) => isChat(line) && !checkLineExists(line))
     .filter((line) => line.length > 0)
     .map((value) => value.replace(/\[Render thread\/INFO\]: \[CHAT\] /, ''))
