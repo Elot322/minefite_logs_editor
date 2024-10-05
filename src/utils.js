@@ -71,7 +71,26 @@ const linesConfig = [
   'Данные роста не были сохранены. Установите рост заново.',
   'Точка возрождения установлена',
   'Вы должны сидеть на лошади.',
-  'Please do not rapidly click in the menu!'
+  'Please do not rapidly click in the menu!',
+  'Не удалось произвести заполнение блоками',
+  'left',
+  'joined',
+  'gamemode',
+  'Первая точка',
+  'Вторая точка',
+  'блока(ов)',
+  '<pattern>',
+  'Unknown command',
+  'кикнут',
+  'ULTIMATEREWARDS',
+  'Сглаживающая кисть экипирована',
+  '//replace',
+  'Invalid value for <to>',
+  'Шейдеры',
+  'Missing argument',
+  '/brush unbind',
+  'Отменено изменений:',
+  'получил достижение'
 ]
 
 function checkLineExists(line) {
